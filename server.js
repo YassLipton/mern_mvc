@@ -35,6 +35,7 @@ app.use(function (req, res, next) {
 })
 
 const dbURI = '<mongodb connection uri>'
+
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => console.log('connected to db'))
   .catch((err) => console.log(err))
